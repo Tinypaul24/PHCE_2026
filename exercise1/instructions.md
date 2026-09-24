@@ -75,8 +75,16 @@ questions:
 
 _Add more blocks as you write._
 
----
-
+Light Sensor (LDR)	Measures ambient light; resistance changes with brightness, read by the Pico as an analog value (ADC)	Input
+2	Potentiometer	Knob that lets the user set a value (e.g., volume, speed); the Pico reads its position as an analog value	Input
+3	Buzzer	Produces beeps and tones controlled by the Pico, for audio feedback like alarms	Output
+4	Relay	Electrically controlled switch; lets the Pico's small signal switch a separate, higher-power circuit (e.g., a lamp) on/off	Output
+5	OLED Screen	Small display showing text and graphics, e.g., sensor values (communicates over I2C)	Output
+6	RGB LED	Single LED that can show any colour by mixing red, green and blue	Output
+7	Button & LED	Push button the user presses, plus a red LED the Pico can turn on/off	Both: button = input, LED = output
+8	Temperature & Humidity Sensor (DHT11)	Measures air temperature and humidity and sends the readings to the Pico	Input
+9	Motor Driver	Controls DC motors (on/off, speed, direction), since motors need more current than a Pico pin can supply	Output
+10	Infrared & Bluetooth	IR receiver picks up signals from a remote control; the Bluetooth module exchanges data wirelessly with e.g. a phone	Both: IR = input, Bluetooth = two-way
 ## Exercise 4: Morse Code
 
 Make a program that blinks `help!` as Morse
